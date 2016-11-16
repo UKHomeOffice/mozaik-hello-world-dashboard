@@ -1,0 +1,181 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "mozaik-ext-github@1.2.2",
+        "scope": null,
+        "escapedName": "mozaik-ext-github",
+        "name": "mozaik-ext-github",
+        "rawSpec": "1.2.2",
+        "spec": "1.2.2",
+        "type": "version"
+      },
+      "/home/tgent/WORK/dashboards/mozaik-demo"
+    ]
+  ],
+  "_from": "mozaik-ext-github@1.2.2",
+  "_id": "mozaik-ext-github@1.2.2",
+  "_inCache": true,
+  "_location": "/mozaik-ext-github",
+  "_nodeVersion": "5.8.0",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/mozaik-ext-github-1.2.2.tgz_1460542071123_0.003783175488933921"
+  },
+  "_npmUser": {
+    "name": "plouc",
+    "email": "tech+npm@rbenitte.com"
+  },
+  "_npmVersion": "3.7.3",
+  "_phantomChildren": {
+    "babel-code-frame": "6.16.0",
+    "babel-generator": "6.18.0",
+    "babel-helpers": "6.16.0",
+    "babel-messages": "6.8.0",
+    "babel-register": "6.7.2",
+    "babel-template": "6.16.0",
+    "babel-traverse": "6.18.0",
+    "babel-types": "6.18.0",
+    "babylon": "6.13.1",
+    "brace-expansion": "1.1.6",
+    "convert-source-map": "1.3.0",
+    "debug": "2.3.2",
+    "path-exists": "1.0.0",
+    "path-is-absolute": "1.0.1",
+    "private": "0.1.6",
+    "shebang-regex": "1.0.0",
+    "slash": "1.0.0",
+    "source-map": "0.5.6"
+  },
+  "_requested": {
+    "raw": "mozaik-ext-github@1.2.2",
+    "scope": null,
+    "escapedName": "mozaik-ext-github",
+    "name": "mozaik-ext-github",
+    "rawSpec": "1.2.2",
+    "spec": "1.2.2",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/mozaik-ext-github/-/mozaik-ext-github-1.2.2.tgz",
+  "_shasum": "389abde4d06c7212c031e96ed66c0340177ab820",
+  "_shrinkwrap": null,
+  "_spec": "mozaik-ext-github@1.2.2",
+  "_where": "/home/tgent/WORK/dashboards/mozaik-demo",
+  "author": {
+    "name": "Raphaël Benitte",
+    "url": "https://github.com/plouc"
+  },
+  "ava": {
+    "files": [
+      "test/**/*.test.js"
+    ],
+    "tap": false,
+    "failFast": true,
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/plouc/mozaik-ext-github/issues"
+  },
+  "dependencies": {
+    "babel-core": "6.7.6",
+    "babel-preset-es2015": "6.6.0",
+    "babel-preset-react": "6.5.0",
+    "babelify": "7.2.0",
+    "bluebird": "3.3.5",
+    "chalk": "1.1.3",
+    "convict": "1.2.0",
+    "lodash": "4.10.0",
+    "moment": "2.12.0",
+    "moment-duration-format": "1.3.0",
+    "react-mixin": "3.0.4",
+    "reflux": "0.4.1",
+    "superagent": "1.8.3",
+    "superagent-bluebird-promise": "3.0.0"
+  },
+  "description": "Mozaik github widgets",
+  "devDependencies": {
+    "ava": "0.14.0",
+    "babel-eslint": "6.0.2",
+    "babel-register": "6.7.2",
+    "coveralls": "2.11.9",
+    "enzyme": "2.2.0",
+    "eslint": "2.7.0",
+    "eslint-plugin-react": "4.3.0",
+    "mockery": "1.5.1",
+    "nock": "8.0.0",
+    "nyc": "6.4.0",
+    "react": "^0.13.3",
+    "sinon": "1.17.3"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "389abde4d06c7212c031e96ed66c0340177ab820",
+    "tarball": "https://registry.npmjs.org/mozaik-ext-github/-/mozaik-ext-github-1.2.2.tgz"
+  },
+  "engines": {
+    "node": "0.12.x",
+    "npm": ">=3.0.0"
+  },
+  "gitHead": "77114ff4f72539e11c71e287baa8990bb24365a1",
+  "homepage": "https://github.com/plouc/mozaik-ext-github",
+  "keywords": [
+    "github",
+    "mozaik",
+    "widget",
+    "extension",
+    "dashboard"
+  ],
+  "license": "MIT",
+  "main": "./src/components/index.js",
+  "maintainers": [
+    {
+      "name": "plouc",
+      "email": "tech+npm@rbenitte.com"
+    }
+  ],
+  "name": "mozaik-ext-github",
+  "nyc": {
+    "extension": [
+      ".jsx"
+    ]
+  },
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "mozaik": ">=1.4.2",
+    "react": "^0.13.3"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/plouc/mozaik-ext-github.git"
+  },
+  "scripts": {
+    "cover-report": "nyc report --reporter=lcov && open coverage/lcov-report/index.html",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "eslint": "eslint --ext .js --ext .jsx ./src/** ./test/**",
+    "test": "ava",
+    "test-cover": "nyc ava"
+  },
+  "version": "1.2.2",
+  "warnings": [
+    {
+      "code": "ENOTSUP",
+      "required": {
+        "node": "0.12.x",
+        "npm": ">=3.0.0"
+      },
+      "pkgid": "mozaik-ext-github@1.2.2"
+    }
+  ]
+}
