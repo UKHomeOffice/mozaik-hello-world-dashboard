@@ -3,13 +3,14 @@ import reactMixin                      from 'react-mixin';
 import { ListenerMixin }               from 'reflux';
 import _                               from 'lodash';
 import Mozaik                          from 'mozaik/browser';
+import util                            from 'util';
 
 
 class DroneBranches extends Component {
     constructor(props) {
         super(props);
 
-        this.state = { count: 0 };
+        this.state = { count: "Data loading..." };
     }
 
     getApiRequest() {
@@ -19,9 +20,20 @@ class DroneBranches extends Component {
     }
 
     onApiData(data) {
-        console.log(data)
+        const json = JSON.parse(data.text);
+        const groupedByBranch = _.groupBy(json, item => item.branch);
+        const latestBuildsPerBranch = _.mapValues(groupedByBranch, group => _.maxBy(group, g => g.started_at));
+
+
+        const html = _.map(latestBuildsPerBranch, b => (
+        <div>
+            <h1>{b.branch}</h1>
+            <h2>{b.status}</h2>
+        </div>
+    ));
+
         this.setState({
-            count: data.count
+            count: html
         });
     }
 
@@ -30,8 +42,7 @@ class DroneBranches extends Component {
 
         return (
           <div className="widget__body">
-              <h1>Yay this is Tim's widget now!!</h1>
-              <p>{count}</p>
+              {count}
           </div>
         );
     }

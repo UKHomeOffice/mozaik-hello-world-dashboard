@@ -10,16 +10,24 @@ import config  from './config';
  */
 const client = mozaik => {
 
-    let count = 0;
+    let count = "Mooooo";
 
     return {
         // Remember the request id `sample.sampleMethod`.
         // This function MUST return a promise.
         getDroneBranches() {
             // each time this method is invoked, we increment the count by 1
-            count += 1;
-
-            return Promise.resolve({ count });
+            mozaik.logger.info(chalk.yellow("LOGGING FTW!!!"));
+            const req = request.get("https://drone.digital.homeoffice.gov.uk/api/repos/UKHomeOffice/docker-node-hello-world/builds");
+            
+            return req.promise();
+            
+            // req.promise().then(function(res) {
+            //     let branch = res.body[0].branch;
+            //     mozaik.logger.info(chalk.yellow(branch));
+            //     {builds: branch};
+            // });
+            // return Promise.resolve({ builds: "Working again" });
         }
     };
 };

@@ -22,7 +22,7 @@
     "bluebird": "3.3.5",
     "dotenv": "^0.5.1",
     "gulp": "^3.9.0",
-    "lodash": "^3.10.0",
+    "lodash": "^4.17.2",
     "mozaik": "1.4.4",
     "mozaik-ext-github": "1.2.2",
     "mozaik-ext-time": "1.1.0",

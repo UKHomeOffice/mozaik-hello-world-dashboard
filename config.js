@@ -35,7 +35,7 @@ var config = {
   rotationDuration: 8000,
 
   // define the interval used by Mozaïk Bus to call registered APIs
-  apisPollInterval: 15000,
+  apisPollInterval: 5000,
 
   dashboards: [
     // first dashboard
@@ -47,7 +47,7 @@ var config = {
         {
           type: 'drone.drone_branches',
           user: 'plouc',
-          columns: 1, rows: 1,
+          columns: 4, rows: 3,
           x: 0, y: 0
         }
       ]
