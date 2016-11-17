@@ -1,42 +1,23 @@
-#Mozaïk demo dashboards
+#Mozaïk trial - dashboard with simple drone widget
 
-[![Travis CI][travis-image]][travis-url]
-
-This repository shows how to use Mozaïk with npm extensions.
+Very simple repo to test out how hard it is to write a basic widget for mozaik.
 
 ## Installation
-
-### Clone the repo
-
-```bash
-git clone git@github.com:plouc/mozaik-demo.git
 ```
-
-### Install packages
-
-```bash
-cd mozaik-demo
+git clone git@github.com:UKHomeOffice/mozaik-hello-world-dashboard.git
+cd mozaik-hello-world-dashboard
 npm install
 ```
 
-### Publish assets (js/css)
+## Running the application
+Please check you have connectivity to the Drone instance first!!
 
-```bash
-gulp build
+### Normally
 ```
-
-### Add github and open weather map tokens in a `.env` file
-
-You should use the `.env.sample` file provided with this repo,
-just rename it to `.env` and put in your own credentials.
-
-
-### Run the app
-
-```bash
 node app.js
 ```
 
-[travis-image]: https://img.shields.io/travis/plouc/mozaik-demo.svg?style=flat-square
-[travis-url]: https://travis-ci.org/plouc/mozaik-demo
-
+### When developing
+```bash
+gulp dev
+```
